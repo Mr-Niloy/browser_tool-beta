@@ -1,0 +1,21 @@
+{
+    "name": "Browser-Tool beta",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "use to save time while browseing",
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ]
+}
